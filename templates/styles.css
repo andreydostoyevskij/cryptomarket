@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#suggestions {
+  width: 290px; /* Limit the dropdown width */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  position: absolute;
+  z-index: 1000;
+  margin-left: 40px;
+  position: absolute;
+  top: 100%;
+  margin-top: 4px;
+  align-items: center;
+  justify-content: center;
+}
+#searchInput{
+  border-radius: 20px;
+  width: 300px;
+  padding: 15px;
+  background-color: #f8f6f6;
+  transition: background-color 0.3s ease;
+}
+
+.search{
+  position: relative;
+  width: px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#searchInput:hover {
+  background-color: #cfccccdc; /* Light pink background on hover */
+}
+#suggestions li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 14px; /* Smaller text size */
+  cursor: pointer;
+  width: 100%; /* Avoid extra spacing */
+}
+
+#suggestions li:hover {
+  background-color: #f0f0f0; /* Highlight on hover */
+}
+
+#suggestions img {
+  width: 24px; /* Smaller image size */
+  height: 24px;
+  margin-right: 8px;
+  border-radius: 50%; /* Circular images */
+}
+
